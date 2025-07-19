@@ -1,0 +1,88 @@
+import React from 'react';
+import { Link } from 'react-scroll';
+import { Globe } from 'lucide-react';
+
+export default function CarasQAToday() {
+  return (
+    <div className="font-sans bg-gray-950 text-white">
+      {/* Navigation */}
+      <header className="sticky top-0 bg-gray-900 p-4 shadow-md z-50">
+        <nav className="flex justify-between items-center max-w-6xl mx-auto">
+          <div className="flex items-center space-x-2 text-xl font-bold">
+            <Globe className="w-6 h-6 text-blue-400" />
+            <span>Cara's QA Today</span>
+          </div>
+          <div className="space-x-6">
+            <Link to="home" smooth className="cursor-pointer hover:text-blue-400">Home</Link>
+            <Link to="projects" smooth className="cursor-pointer hover:text-blue-400">Projects</Link>
+            <Link to="about" smooth className="cursor-pointer hover:text-blue-400">About</Link>
+            <Link to="contact" smooth className="cursor-pointer hover:text-blue-400">Contact</Link>
+          </div>
+        </nav>
+      </header>
+
+      {/* Home Section */}
+      <section id="home" className="min-h-screen flex items-center justify-center text-center px-4">
+        <div>
+          <h1 className="text-4xl md:text-6xl font-extrabold mb-4">Welcome to Cara's QA Today</h1>
+          <p className="text-lg md:text-xl text-gray-400 max-w-xl mx-auto">
+            QA Software Engineer with a passion for quality, collaboration, and showcasing real testing in action.
+          </p>
+        </div>
+      </section>
+
+      {/* Projects Section */}
+      <section id="projects" className="py-16 px-6 bg-gray-900">
+        <h2 className="text-3xl font-bold mb-8 text-center">Featured Projects</h2>
+        <div className="grid md:grid-cols-2 gap-8 max-w-5xl mx-auto">
+          {[1, 2, 3, 4].map((num) => (
+            <div key={num} className="bg-gray-800 p-4 rounded-2xl shadow">
+              <h3 className="text-xl font-semibold mb-2">Bug Jam #{num}</h3>
+              <p className="text-gray-400 mb-2">Team collaboration, live bug hunting session.</p>
+              <a href="#" className="text-blue-400 hover:underline">Watch Video</a>
+            </div>
+          ))}
+          <div className="bg-gray-800 p-4 rounded-2xl shadow">
+            <h3 className="text-xl font-semibold mb-2">Solo Retest</h3>
+            <p className="text-gray-400 mb-2">Independent bug retesting to highlight personal skills.</p>
+            <a href="#" className="text-blue-400 hover:underline">Watch Video</a>
+          </div>
+        </div>
+      </section>
+
+      {/* About Section */}
+      <section id="about" className="py-16 px-6">
+        <h2 className="text-3xl font-bold mb-6 text-center">About Me</h2>
+        <div className="max-w-3xl mx-auto text-center text-gray-300">
+          <p className="mb-4">
+            I’m Cara, a QA Software Engineer focused on ensuring product quality through detailed testing, bug tracking, and collaboration.
+            I’ve contributed to multiple live bug jams, and also take initiative to retest and validate fixes.
+          </p>
+          <p className="mb-4">
+            Tools I use include JIRA, Postman, Selenium, TestRail, and more. I love digging into issues and making products better.
+          </p>
+          <p className="mb-4">
+            <strong>What is a QA Engineer?</strong><br/>
+            A QA (Quality Assurance) Engineer is responsible for ensuring that software products meet quality standards before they’re released. This involves planning and executing tests, identifying bugs, and working closely with developers to resolve issues. The purpose is to prevent defects, enhance product performance, and deliver the best user experience possible.
+          </p>
+        </div>
+      </section>
+
+      {/* Contact Section */}
+      <section id="contact" className="py-16 px-6 bg-gray-900">
+        <h2 className="text-3xl font-bold mb-6 text-center">Contact Me</h2>
+        <div className="max-w-md mx-auto text-center">
+          <p className="text-gray-400 mb-4">Want to connect? Reach out via email or LinkedIn!</p>
+          <div className="space-y-2">
+            <a href="mailto:your.email@example.com" className="block text-blue-400 hover:underline">your.email@example.com</a>
+            <a href="https://linkedin.com/in/yourprofile" className="block text-blue-400 hover:underline">LinkedIn Profile</a>
+          </div>
+        </div>
+      </section>
+
+      <footer className="text-center text-gray-500 py-6 text-sm">
+        © {new Date().getFullYear()} Cara's QA Today. All rights reserved.
+      </footer>
+    </div>
+  );
+}
