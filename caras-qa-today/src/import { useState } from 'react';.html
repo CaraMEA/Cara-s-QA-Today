@@ -1,4 +1,4 @@
-import React from 'react';
+import { useState } from 'react';
 import { Link } from 'react-scroll';
 import { Globe } from 'lucide-react';
 
@@ -39,7 +39,7 @@ export default function CarasQAToday() {
             <div key={num} className="bg-gray-800 p-4 rounded-2xl shadow">
               <h3 className="text-xl font-semibold mb-2">Bug Jam #{num}</h3>
               <p className="text-gray-400 mb-2">Team collaboration, live bug hunting session.</p>
-              <button className="text-blue-400 hover:underline" disabled>Watch Video</button>
+              <a href="#" className="text-blue-400 hover:underline">Watch Video</a>
             </div>
           ))}
           <div className="bg-gray-800 p-4 rounded-2xl shadow">
@@ -74,8 +74,8 @@ export default function CarasQAToday() {
         <div className="max-w-md mx-auto text-center">
           <p className="text-gray-400 mb-4">Want to connect? Reach out via email or LinkedIn!</p>
           <div className="space-y-2">
-            <a href="mailto:cara.qa@example.com" className="block text-blue-400 hover:underline">cara.qa@example.com</a>
-            <a href="https://linkedin.com/in/actual-profile" className="block text-blue-400 hover:underline">LinkedIn Profile</a>
+            <a href="mailto:your.email@example.com" className="block text-blue-400 hover:underline">your.email@example.com</a>
+            <a href="https://linkedin.com/in/yourprofile" className="block text-blue-400 hover:underline">LinkedIn Profile</a>
           </div>
         </div>
       </section>
