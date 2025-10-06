@@ -1,31 +1,14 @@
 {
-  "name": "exit",
+  "name": "carasqaway",
+  "private": true,
   "version": "1.0.0",
-  "description": "import { useState } from 'react';\r import { Link } from 'react-scroll';\r import { Globe } from 'lucide-react';",
-  "keywords": [],
-  "homepage": "https://github.com/CaraMEA/Cara-s-QA-Today#readme",
-  "bugs": {
-    "url": "https://github.com/CaraMEA/Cara-s-QA-Today/issues"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/CaraMEA/Cara-s-QA-Today.git"
-  },
-  "license": "ISC",
-  "author": "",
-  "type": "commonjs",
-  "main": "index.js",
+  "type": "module",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "dependencies": {
-    "react": "^19.2.0",
-    "react-dom": "^19.2.0",
-    "react-scripts": "^0.0.0"
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
   },
   "devDependencies": {
-    "@playwright/test": "^1.55.1",
-    "@types/react": "^19.2.0",
-    "@types/react-dom": "^19.2.0"
+    "vite": "^5.4.0"
   }
 }
