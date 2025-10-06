@@ -1,0 +1,156 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Cara'sQAway — QA Engineer</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="QA Engineer focused on automation, functional, regression, and accessibility testing.">
+  <style>
+    :root{
+      --pink:#ec4899; --pink-50:#fdf2f8; --gray-50:#f9fafb; --gray-200:#e5e7eb; --gray-900:#111827;
+    }
+    *{box-sizing:border-box}
+    body{margin:0;font-family:system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif;color:var(--gray-900);
+      background:linear-gradient(180deg,var(--pink-50),var(--gray-50));}
+    header{position:sticky;top:0;z-index:50;background:rgba(255,255,255,.9);backdrop-filter:saturate(180%) blur(8px);
+      border-bottom:1px solid var(--gray-200)}
+    .wrap{max-width:1100px;margin:0 auto;padding:0 16px}
+    nav a{margin-left:14px;text-decoration:none;color:var(--gray-900)}
+    h2{font-size:1.75rem;margin:0 0 10px 0}
+    section{padding:42px 0}
+    .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:16px}
+    .card{background:#fff;border:1px solid var(--gray-200);border-radius:14px;overflow:hidden}
+    .card img{width:100%;height:160px;object-fit:cover;display:block}
+    .card .p{padding:12px 14px}
+    details{background:#fff;border:1px solid var(--gray-200);border-radius:12px;padding:10px 14px}
+    details summary{cursor:pointer;font-weight:600}
+    .btn{display:inline-block;margin-top:12px;padding:10px 14px;border-radius:10px;border:1px solid var(--pink);color:var(--pink);text-decoration:none}
+    footer{text-align:center;color:#6b7280;padding:28px 0}
+    /* subtle maze background toggle */
+    body.maze::before{content:"";position:fixed;inset:0;pointer-events:none;opacity:.25;mix-blend-mode:multiply;
+      background-image:url("https://svgshare.com/i/15Zg.svg"); /* gray maze */
+      background-size:800px auto;background-repeat:repeat;}
+  </style>
+</head>
+<body class="maze">
+  <header>
+    <div class="wrap" style="display:flex;align-items:center;justify-content:space-between;height:64px;">
+      <div><img src="https://i.imgur.com/cj4pXWJ.png" alt="CCQA logo" style="height:44px"></div>
+      <nav>
+        <a href="#types">Testing Types</a>
+        <a href="#portfolio">Portfolio</a>
+        <a href="#approach">My Approach</a>
+        <a href="#contact">Contact</a>
+        <a href="#about">About</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- TESTING TYPES -->
+  <section id="types">
+    <div class="wrap">
+      <h2>30 Software Testing Types</h2>
+      <p>Click any item to expand its one-liner.</p>
+      <div class="grid">
+        <details><summary>Accessibility</summary><p>Inclusive use with assistive tech; WCAG checks and keyboard flows.</p></details>
+        <details><summary>Performance</summary><p>Response times, throughput, and resource usage under load.</p></details>
+        <details><summary>Functional</summary><p>Validates features against requirements and user stories.</p></details>
+        <details><summary>Regression</summary><p>Confirms new changes do not break existing behavior.</p></details>
+        <details><summary>Smoke</summary><p>High-level checks to verify the build is stable.</p></details>
+        <details><summary>Black Box</summary><p>Tests via inputs/outputs without code knowledge.</p></details>
+        <details><summary>White Box</summary><p>Tests with awareness of code structure and logic.</p></details>
+        <!-- Add the rest of your 30 types here (or in your real file they’re already present) -->
+      </div>
+    </div>
+  </section>
+
+  <!-- PORTFOLIO (WITH TECH IMAGES) -->
+  <section id="portfolio">
+    <div class="wrap">
+      <h2>Portfolio</h2>
+      <div class="grid">
+        <article class="card">
+          <img src="https://images.unsplash.com/photo-1518779578993-ec3579fee39f?q=80&w=1200&auto=format&fit=crop" alt="Automation testing">
+          <div class="p">
+            <h3 style="margin:6px 0 8px">Automation Externship</h3>
+            <p>Playwright + TypeScript pipelines, stable E2E and API checks.</p>
+            <p><a class="btn" href="#" onclick="alert('Replace with your repo/case study URL')">Repo / Case Study</a></p>
+          </div>
+        </article>
+
+        <!-- BUG JAMS ×6 with tech images and your Canva links -->
+        <article class="card">
+          <img src="https://images.unsplash.com/photo-1518770660439-4636190af475?q=80&w=1200&auto=format&fit=crop" alt="Bug Jam">
+          <div class="p">
+            <h3 style="margin:6px 0 8px">Bug Jams ×6</h3>
+            <ul style="margin:0 0 0 18px;line-height:1.7">
+              <li><a href="https://www.canva.com/design/DAGt1vci334/b5NN8kkXHdwoxupY-stklQ/view" target="_blank" rel="noreferrer">Bug Jam #1</a></li>
+              <li><a href="https://www.canva.com/design/DAGik9LQEKo/lcMBQhDx3G3UECV2iG_Xow/view" target="_blank" rel="noreferrer">Bug Jam #2</a></li>
+              <li><a href="https://www.canva.com/design/DAGtMNG9OfU/RcZMaikR8y0fjAAtoihpYA/view" target="_blank" rel="noreferrer">Bug Jam #3</a></li>
+              <li><a href="https://www.canva.com/design/DAGjD4GkKWs/3RaQCWsAUkUAKALTND0ttg/view" target="_blank" rel="noreferrer">Bug Jam #4</a></li>
+              <li><a href="https://www.canva.com/design/DAGl-VYjmPM/46R3ON1tysZpQhudPAnkdg/view" target="_blank" rel="noreferrer">Bug Jam #5</a></li>
+              <li><a href="https://www.canva.com/design/DAGfyM17el4/eXWwu09anyB0mfto7kEqmQ/view" target="_blank" rel="noreferrer">Bug Jam #6</a></li>
+            </ul>
+          </div>
+        </article>
+
+        <article class="card">
+          <img src="https://images.unsplash.com/photo-1518779574537-3d4e76697d0f?q=80&w=1200&auto=format&fit=crop" alt="Open source">
+          <div class="p">
+            <h3 style="margin:6px 0 8px">Open Source</h3>
+            <p>Test cases, issues, and PRs on community projects.</p>
+            <p><a class="btn" href="#" onclick="alert('Replace with PRs / Issues URL')">PRs / Issues</a></p>
+          </div>
+        </article>
+
+        <article class="card">
+          <img src="https://images.unsplash.com/photo-1518770660439-4636190af475?q=80&w=1200&auto=format&fit=crop" alt="A11y & performance">
+          <div class="p">
+            <h3 style="margin:6px 0 8px">Accessibility & Performance</h3>
+            <p>Audit notes with prioritized fixes and before/after metrics.</p>
+            <p><a class="btn" href="#" onclick="alert('Replace with audit notes URL')">Audit Notes</a></p>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- APPROACH -->
+  <section id="approach">
+    <div class="wrap">
+      <h2>My Test Approach</h2>
+      <ol style="line-height:1.9;padding-left:1.2rem;">
+        <li>Understand the user story, risks, and acceptance criteria.</li>
+        <li>Plan light charters and checklists; prioritize by risk and impact.</li>
+        <li>Automate critical paths (API + E2E smoke) to keep feedback fast.</li>
+        <li>Expand coverage near code with unit/integration tests.</li>
+        <li>Explore with session-based testing to uncover edge cases.</li>
+        <li>Shift left with code reviews and CI gates.</li>
+        <li>Measure pass rate, flakiness, and time-to-detect in CI.</li>
+        <li>Report clearly with repro steps, expected/actual, logs, screenshots.</li>
+        <li>Turn bugs into tests to prevent regressions.</li>
+        <li>Continuously prune flaky tests and improve test data.</li>
+      </ol>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact">
+    <div class="wrap">
+      <h2>Contact</h2>
+      <p>Email: <a href="mailto:christina34mea@gmail.com">christina34mea@gmail.com</a> · LinkedIn: <a href="https://linkedin.com/in/caracrossmea" target="_blank" rel="noreferrer">caracrossmea</a> · GitHub: <a href="https://github.com/CaraMEA" target="_blank" rel="noreferrer">CaraMEA</a></p>
+    </div>
+  </section>
+
+  <!-- ABOUT AT THE END (per your request) -->
+  <section id="about">
+    <div class="wrap">
+      <h2>About Me</h2>
+      <p>I’m Cara Cross — QA Engineer with hands-on automation and exploratory testing experience. Recent work includes an automation externship, six Bug Jams, and open source contributions. I focus on clarity, stability, and collaboration to raise product quality.</p>
+    </div>
+  </section>
+
+  <footer>© <span id="y"></span> Cara'sQAway</footer>
+  <script>document.getElementById('y').textContent = new Date().getFullYear();</script>
+</body>
+</html>
