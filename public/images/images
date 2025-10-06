@@ -1,0 +1,12 @@
+public/
+  images/
+    logo-ccqa.png                 (your new logo)
+    hero-tech-1.png               (if you referenced these local files)
+    hero-tech-2.png
+    bugjam-1.png
+    bugjam-3.png
+    bugjam-4.png
+    patterns/
+      maze.svg                    (gray maze svg)
+  resume/
+    Cara-Cross-Resume.pdf
